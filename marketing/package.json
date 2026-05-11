@@ -11,8 +11,6 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"start": "node ./dist/server/entry.mjs",
-		"bootstrap": "emdash init && emdash seed",
-		"seed": "emdash seed",
 		"typecheck": "astro check"
 	},
 	"dependencies": {
@@ -22,7 +20,7 @@
 		"astro": "^6.0.1",
 		"astro-iconset": "^0.0.4",
 		"better-sqlite3": "^12.8.0",
-		"emdash": "^0.9.0",
+		"emdash": "^0.11.0",
 		"react": "19.2.4",
 		"react-dom": "19.2.4"
 	},
