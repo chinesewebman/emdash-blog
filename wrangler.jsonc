@@ -1,0 +1,29 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "emdash-blog",
+	"main": "./src/worker.ts",
+	"compatibility_date": "2026-02-24",
+	"compatibility_flags": ["nodejs_compat"],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "emdash-blog-db",
+			"database_id": "41060964-8b4b-43ef-8f05-9e21bcc507af"
+		}
+	],
+	"r2_buckets": [
+		{
+			"binding": "MEDIA",
+			"bucket_name": "emdash-media"
+		}
+	],
+	// Worker Loader for plugin sandboxing (DISABLED for free-tier deploy)
+	// "worker_loaders": [
+	// 	{
+	// 		"binding": "LOADER"
+	// 	}
+	// ],
+	"triggers": {
+		"crons": ["* * * * *"]
+	}
+}
