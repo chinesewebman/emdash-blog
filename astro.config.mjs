@@ -21,7 +21,8 @@ export default defineConfig({
 			// sandboxed plugins DISABLED (free-tier deploy, no Dynamic Workers)
 			// sandboxed: [...],
 			// sandboxRunner: sandbox(),
-			marketplace: "https://marketplace.emdashcms.com",
+			// marketplace removed (requires sandboxRunner — free tier doesn't have Dynamic Workers)
+			// marketplace: "https://marketplace.emdashcms.com",
 		}),
 	],
 	fonts: [
